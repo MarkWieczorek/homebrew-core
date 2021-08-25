@@ -24,7 +24,7 @@ class Shtools < Formula
   end
 
   test do
-    cp_r "#{prefix}/share/examples/shtools", testpath
+    cp_r "#{share}/examples/shtools", testpath
     system "make", "-C", "shtools/fortran",
                    "run-fortran-tests-no-timing",
                    "F95=gfortran",
